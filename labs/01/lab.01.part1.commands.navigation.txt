@@ -16,6 +16,10 @@ $ ls<ENTER>
 Copy and paste the output of ls below.
 ----------
 
+Applications		Downloads		Pictures
+Creative Cloud Files	Library			Public
+Desktop			Movies			get-pip.py
+Documents		Music
 
 
 
@@ -29,7 +33,9 @@ $ ls -l Documents<ENTER>
 Copy and paste the first *two lines* of output below.
 ----------
 
-
+total 8
+drwxr-xr-x@ 6 marlenxique  staff  192 Aug 29 13:42 Adobe
+-rw-r--r--@ 1 marlenxique  staff  461 Sep  3 09:14 classwork.py
 
 
 
@@ -42,7 +48,8 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
-
+.		.DS_Store	Adobe
+..		.localized	classwork.py
 
 
 
@@ -55,7 +62,7 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
-
+ls: doesnotexist: No such file or directory
 
 
 
@@ -64,6 +71,7 @@ Copy and paste the output below.
 5.  What key do I press to go to the previous command?
 ----------
 
+Up button
 
 
 
@@ -73,7 +81,7 @@ Copy and paste the output below.
 6.  Name two flags that we used in this exercise.
 ----------
 
-
+-l, -a
 
 
 
@@ -82,7 +90,7 @@ Copy and paste the output below.
 7.  What was the main command that we used throughout this exercise?
 ----------
 
-
+ls
 
 
 
@@ -91,7 +99,7 @@ Copy and paste the output below.
 8.  What's one an argument that we've so far passed to a command?
 ----------
 
-
+documents
 
 
 
@@ -104,7 +112,7 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
-
+zsh: command not found: foo
 
 
 
@@ -117,7 +125,7 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
+zsh: parse error near `\n'
 
 
 
@@ -129,10 +137,10 @@ $ ls -a Desktop
 
 Identify the command, flag, argument, and prompt:
 ----------
-
-
-
-
+Command -ls
+Flag -a
+Argument -Desktop
+Prompt -$
 
 Lab 1 / Part 2 - Navigating the File System
 ==========
@@ -147,7 +155,7 @@ Follow the instructions line-by-line.
 12. Open a new terminal window. Create a directory called mtec1002. What command did you use?
 ----------
 
-
+mkdir mtec1002
 
 
 
@@ -156,7 +164,7 @@ Follow the instructions line-by-line.
 13. Change your directory so that you're in mtec1002. What command did you use?
 ----------
 
-
+cd mtec1002
 
 
 
@@ -173,7 +181,7 @@ If it doesn't ask for help before moving on!
 Copy and paste the output of pwd below.
 ----------
 
-
+/Users/marlenxique/mtec1002
 
 
 
@@ -187,7 +195,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals
 
 
 
@@ -202,6 +210,7 @@ Copy and paste the output below.
 ----------
 
 
+animals	food
 
 
 
@@ -215,7 +224,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals	foo	food
 
 
 
@@ -230,7 +239,7 @@ Copy and paste the output below.
 ----------
 
 
-
+/Users/marlenxique/mtec1002/foo/bar/baz/qux
 
 
 
@@ -243,7 +252,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/Users/marlenxique/mtec1002/foo/bar
 
 
 
@@ -257,7 +266,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/Users/marlenxique/mtec1002/foo/bar/baz/qux
 
 
 
@@ -271,7 +280,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/Users/marlenxique/mtec1002
 
 
 
@@ -286,7 +295,9 @@ $ ls -l
 Copy and paste the first 3 lines from the output into the space below.
 ----------
 
-
+total 0
+drwxr-xr-x  3 marlenxique  staff  96 Sep  5 19:54 foo
+drwxr-xr-x  2 marlenxique  staff  64 Sep  5 19:54 food
 
 
 
@@ -301,7 +312,7 @@ Copy and paste the output into the space below.
 ----------
 
 
-
+/Users/marlenxique/mtec1002/foo/bar/baz/qux
 
 
 
@@ -315,6 +326,7 @@ Copy and paste the output into the space below.
 ----------
 
 
+/volumes
 
 
 
@@ -327,7 +339,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/volumes
 
 
 
@@ -342,7 +354,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/Users/marlenxique/mtec1002
 
 
 
@@ -355,7 +367,7 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
+Marlens-MBP.lan
 
 
 
@@ -365,7 +377,7 @@ Copy and paste the output into the space below.
 ----------
 
 
-
+pwd
 
 
 
@@ -395,7 +407,7 @@ lemon
 Write the one command you used below:
 ----------
 
-
+mkdir {lemon,strawberry,orange,pineapple}
 
 
 
@@ -406,7 +418,7 @@ Write the one command you used below:
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir aardvark
 
 
 
@@ -417,7 +429,7 @@ Write the command you used to create the directory below:
 What is the modified date of the aardvark directory?
 ----------
 
-
+20:17
 
 
 
@@ -432,7 +444,7 @@ What is the modified date of the aardvark directory?
 What command did you use?
 ----------
 
-
+mkdir -p {foo,bar,baz}
 
 
 
@@ -445,7 +457,7 @@ What command did you use?
 
 
 
-
+cd foo/bar/baz
 
 
 ==========
@@ -455,7 +467,7 @@ What command did you use?
 ----------
 
 
-
+cd ../..
 
 
 
@@ -464,7 +476,7 @@ What command did you use?
 ----------
 
 
-
+rmdir
 
 
 
@@ -473,7 +485,7 @@ What command did you use?
 ----------
 
 
-
+pwd
 
 
 
@@ -482,7 +494,7 @@ What command did you use?
 ----------
 
 
-
+-a
 
 
 
@@ -491,7 +503,7 @@ What command did you use?
 ----------
 
 
-
+~
 
 
 
@@ -500,19 +512,20 @@ What command did you use?
 ----------
 
 
-
-
-
+/Users/marlenxique/mtec1002/foo
+or
+/Users/marlenxique/
 
 ==========
 41. What is a directory?
 ----------
 
 
-
+a directory is a cataloging structure on a file system that references other files
 
 
 
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+/users/marlenxique/downloads
